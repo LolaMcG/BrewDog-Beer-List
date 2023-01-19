@@ -15,7 +15,7 @@ const BeerSelecter = ({onBeerSelectedAsAProp, beers}) => {
 
 
     return (
-        <select defaultValue="" onChange={handleChange}>
+        <select defaultValue="" onChange={handleChange} id="dropDown">
             <option value="" selected>Choose a beer!</option>
             {beerOptions}
         </select>

@@ -10,12 +10,16 @@ const BeerItem = ({beerName, beerTag, beerAbv, beerDescription, beerFood, beerIm
                 <h3>
                     {beerTag}
                 </h3>
-                <p>
+                <section>
+                    <h4>Description: </h4>
                     {beerDescription}<br></br>
+                    <h4>This beer pairs well with: </h4>
                     {beerFood}<br></br>
+                    <h4>Alcohol content: </h4>
                     {beerAbv}<br></br>
+                    <br></br>
                     <img src={beerImg}/>
-                </p>
+                </section>
             </li>
         </div>
     )

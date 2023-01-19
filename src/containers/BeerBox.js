@@ -23,23 +23,27 @@ const BeerBox = () => {
         const selectedBeer = beers.find((beer) => beer.id == beerId)
         setSelectedBeer(selectedBeer)
     }
-// double & acts like a ternery except we don't say what the false thing is gona be, instead it will be Null 
-// the ternery is this thing <boolean condtion> ? "I will be displayed if true" : "I will be displayed if false"
+// double '&' acts like a ternery except we don't say what the false thing is gonna be, instead it will be Null.
+// the ternery is: <boolean condtion> ? "I will be displayed if true" : "I will be displayed if false"
 // it acts like a if else statement but on one line 
     return (
         <div>
-            <Header title="BrewDog Beer List"/>
+            <Header header="BrewDog Beer List"/>
             <BeerSelecter beers={beers}onBeerSelectedAsAProp={onBeerSelected}/>
-        
-        {selectedBeer &&  <BeerItem 
+            
+            {selectedBeer ? 
+                //if selectedBeer is truthy, display the following
+            <BeerItem 
                 beerName={selectedBeer.name} 
                 beerTag={selectedBeer.tagline} 
                 beerDescription={selectedBeer.description} 
                 beerAbv={selectedBeer.abv} 
                 beerFood={selectedBeer.food_pairing} 
                 beerImg={selectedBeer.image_url} 
-                key={selectedBeer.id}/>
-        }
+                key={selectedBeer.id}/> :
+                // if falsy, display the following
+            <BeerList beers={beers}/>
+            }
         </div>
     )
 }
