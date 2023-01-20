@@ -1,5 +1,7 @@
 import React from "react";
 
+
+//**HERE IS WHERE THE STUFF IN YELLOW FROM THE BEERBOX CONTAINER IS PASSED IN AS A PROP, AFTER HAVING BEING TRANSLATED INTO A PROP IN THE PARENT CONTAINER */
 const BeerItem = ({beerName, beerTag, beerAbv, beerDescription, beerFood, beerImg}) => {
     return (
         <div>

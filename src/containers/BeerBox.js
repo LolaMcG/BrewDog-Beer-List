@@ -26,6 +26,8 @@ const BeerBox = () => {
 // double '&' acts like a ternery except we don't say what the false thing is gonna be, instead it will be Null.
 // the ternery is: <boolean condtion> ? "I will be displayed if true" : "I will be displayed if false"
 // it acts like a if else statement but on one line 
+
+// ***THE STUFF IN THE YELLOW BELOW - this is stuff being translated into props. A prop with the name in yellow is now passed down into the child components, used as a parameter between the brackets that appear after the initial definition of each child component.***
     return (
         <div>
             <Header header="BrewDog Beer List"/>

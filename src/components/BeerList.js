@@ -1,6 +1,8 @@
 import React from "react";
 import BeerItem from "./BeerItem";
 
+
+//**HERE IS WHERE THE STUFF IN YELLOW FROM THE BEERBOX CONTAINER IS PASSED IN AS A PROP, AFTER HAVING BEING TRANSLATED INTO A PROP IN THE PARENT CONTAINER */
 const BeerList = ({beers}) => {
     
     // const listOfMappedBeers = beers.map((beer) => {
