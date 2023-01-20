@@ -27,7 +27,7 @@ const BeerBox = () => {
 // the ternery is: <boolean condtion> ? "I will be displayed if true" : "I will be displayed if false"
 // it acts like a if else statement but on one line 
 
-// ***THE STUFF IN THE YELLOW BELOW - this is stuff being translated into props. A prop with the name in yellow is now passed down into the child components, used as a parameter between the brackets that appear after the initial definition of each child component.***
+// ***THE STUFF IN THE YELLOW BELOW - this is stuff being translated into props. A prop with the name in yellow is now passed down into the child components, used as a parameter between the brackets that appear after the initial definition of each child component. If you need any of the info from 'beers' (as defined on line 9) and need to use it elsewhere (like, in beerList you'll want the name and description or whatever), you translate it into a prop below, which then allows it to be passed down to the child component.***
     return (
         <div>
             <Header header="BrewDog Beer List"/>
